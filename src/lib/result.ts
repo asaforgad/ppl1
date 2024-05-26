@@ -1,11 +1,11 @@
 export type Result<T> = Ok<T> | Failure;
 
-type Ok<T> = {
+export type Ok<T> = {
     tag: "Ok";
     value: T;
 }
 
-type Failure = {
+export type Failure = {
     tag: "Failure";
     message: string;
 }
